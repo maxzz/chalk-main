@@ -3,6 +3,11 @@
 	"version": "5.3.1",
 	"description": "Terminal string styling done right. This is clone of chalk but only node version.",
 	"license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/maxzz/node-chalk.git"
+    },
+    "homepage": "https://github.com/maxzz/node-chalk",
 	"type": "module",
 	"main": "./source/index.js",
 	"exports": "./source/index.js",
