@@ -1,19 +1,14 @@
 {
-	"name": "chalk",
-	"version": "5.3.0",
-	"description": "Terminal string styling done right",
+	"name": "node-chalk",
+	"version": "5.3.1",
+	"description": "Terminal string styling done right. This is clone of chalk but only node version",
 	"license": "MIT",
-	"repository": "chalk/chalk",
-	"funding": "https://github.com/chalk/chalk?sponsor=1",
 	"type": "module",
 	"main": "./source/index.js",
 	"exports": "./source/index.js",
 	"imports": {
 		"#ansi-styles": "./source/vendor/ansi-styles/index.js",
-		"#supports-color": {
-			"node": "./source/vendor/supports-color/index.js",
-			"default": "./source/vendor/supports-color/browser.js"
-		}
+		"#supports-color": "./source/vendor/supports-color/index.js"
 	},
 	"types": "./source/index.d.ts",
 	"engines": {
