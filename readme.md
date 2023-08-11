@@ -1,3 +1,37 @@
+# node-chalk is a clone of the famous chalk npm package
+
+The only difference between chalk and node-chalk is that node-chalk only has a node.js version.
+The browser version of chank is installed by default in the source version and cannot be built with rollup.js for node.js projects.
+Indeed, browser-based DevTools have built-in support for console.log colorization and formatting.
+The only change is made inside the package.json file.
+
+Original:
+```
+"imports": {
+		"#ansi-styles": "./source/vendor/ansi-styles/index.js",
+		"#supports-color": {
+			"node": "./source/vendor/supports-color/index.js",
+			"default": "./source/vendor/supports-color/browser.js"
+		}
+	},
+```
+Modified:
+```
+	"imports": {
+		"#ansi-styles": "./source/vendor/ansi-styles/index.js",
+		"#supports-color": "./source/vendor/supports-color/index.js"
+	},
+```
+
+Hopefully this change will be accepted by chalk.js someday.
+
+This is all. The rest of this file is the contents of the chalk.js version 5.3.0 package released on June 29, 2023.
+All credits belong to the authors of the chalk.js package.
+
+Thanks,
+
+<hr/>
+
 <h1 align="center">
 	<br>
 	<br>

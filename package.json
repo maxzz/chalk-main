@@ -1,7 +1,7 @@
 {
 	"name": "node-chalk",
 	"version": "5.3.1",
-	"description": "Terminal string styling done right. This is clone of chalk but only node version",
+	"description": "Terminal string styling done right. This is clone of chalk but only node version.",
 	"license": "MIT",
 	"type": "module",
 	"main": "./source/index.js",
